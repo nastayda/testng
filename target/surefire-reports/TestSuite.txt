@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.57 sec <<< FAILURE! - in TestSuite
+createFileInNotExistedDirectory(com.company.app.CreateFileTestFunction)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: File was not created
+Expected: is <true>
+     but: was <false>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.company.app.CreateFileTestFunction.createFileInNotExistedDirectory(CreateFileTestFunction.java:52)
+
+createFileInNotExistedDirectory(com.company.app.CreateFileTestFunction)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: File was not created
+Expected: is <true>
+     but: was <false>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.company.app.CreateFileTestFunction.createFileInNotExistedDirectory(CreateFileTestFunction.java:52)
+

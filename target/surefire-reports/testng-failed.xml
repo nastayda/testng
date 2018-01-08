@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite1]">
+  <test name="Test1(failed)">
+    <groups>
+      <run>
+        <include name="positive"/>
+        <include name="negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.company.app.CreateFileTestFunction">
+        <methods>
+          <include name="deleteDirectory"/>
+          <include name="createFileInNotExistedDirectory" invocation-numbers="0 1"/>
+          <include name="createDirectory"/>
+          <include name="createTxtFile"/>
+        </methods>
+      </class> <!-- com.company.app.CreateFileTestFunction -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
